@@ -48,5 +48,23 @@ extension WeatherDataLoad {
 
 extension WeatherInfo {
     
-    
+    static func getWeatherInfo() -> [WeatherArrayData] {
+        var weatherArrayInfo = [WeatherArrayData]()
+        
+        guard let fileURL = Bundle.main.url(forResource: "WeatherData", withExtension: "json") else {
+            fatalError("could not fild weather data file")
+        }
+        
+        do {
+            let data = try Data.init(contentsOf: fileURL)
+            
+            let weatherData = try JSONDecoder().decode(WeatherInfo.self, from: data)
+            weatherArrayInfo = weatherData.weather
+        } catch{
+            fatalError("error found: \(error)")
+        }
+        
+        
+    return weatherArrayInfo
+    }
 }
