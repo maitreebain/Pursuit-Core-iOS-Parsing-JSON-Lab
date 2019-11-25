@@ -13,6 +13,8 @@
 		80A2A532238C84F7007F82E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A2A530238C84F7007F82E3 /* Main.storyboard */; };
 		80A2A534238C84F8007F82E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A2A533238C84F8007F82E3 /* Assets.xcassets */; };
 		80A2A537238C84F8007F82E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A2A535238C84F8007F82E3 /* LaunchScreen.storyboard */; };
+		80A2A53F238C8688007F82E3 /* WeatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 80A2A53E238C8688007F82E3 /* WeatherData.json */; };
+		80A2A541238C86DE007F82E3 /* WeatherDataLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2A540238C86DE007F82E3 /* WeatherDataLoad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		80A2A533238C84F8007F82E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A2A536238C84F8007F82E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A2A538238C84F9007F82E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A2A53E238C8688007F82E3 /* WeatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherData.json; sourceTree = "<group>"; };
+		80A2A540238C86DE007F82E3 /* WeatherDataLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataLoad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				80A2A52A238C84F7007F82E3 /* AppDelegate.swift */,
 				80A2A52C238C84F7007F82E3 /* SceneDelegate.swift */,
 				80A2A52E238C84F7007F82E3 /* ViewController.swift */,
+				80A2A53E238C8688007F82E3 /* WeatherData.json */,
+				80A2A540238C86DE007F82E3 /* WeatherDataLoad.swift */,
 				80A2A530238C84F7007F82E3 /* Main.storyboard */,
 				80A2A533238C84F8007F82E3 /* Assets.xcassets */,
 				80A2A535238C84F8007F82E3 /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			files = (
 				80A2A537238C84F8007F82E3 /* LaunchScreen.storyboard in Resources */,
 				80A2A534238C84F8007F82E3 /* Assets.xcassets in Resources */,
+				80A2A53F238C8688007F82E3 /* WeatherData.json in Resources */,
 				80A2A532238C84F7007F82E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				80A2A52F238C84F7007F82E3 /* ViewController.swift in Sources */,
 				80A2A52B238C84F7007F82E3 /* AppDelegate.swift in Sources */,
+				80A2A541238C86DE007F82E3 /* WeatherDataLoad.swift in Sources */,
 				80A2A52D238C84F7007F82E3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

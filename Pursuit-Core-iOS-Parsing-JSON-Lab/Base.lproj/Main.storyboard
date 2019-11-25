@@ -67,7 +67,7 @@
         <scene sceneID="vWN-EY-gS1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9B9-EX-Wii" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Fz4-T7-wE5"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="circle.lefthalf.fill" catalog="system" id="Fz4-T7-wE5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MFQ-PZ-bLv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -133,7 +133,7 @@
         <scene sceneID="Dzw-62-T3J">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LMm-BE-nGF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5iY-nB-OEF"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="circle.fill" catalog="system" id="5iY-nB-OEF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aHM-66-0JN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -152,7 +152,7 @@
         <scene sceneID="3Qa-ib-bm2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oYc-dp-KzV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8Iu-D3-pFs"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="circle.righthalf.fill" catalog="system" id="8Iu-D3-pFs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9h7-X5-E1I">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -168,4 +168,9 @@
             <point key="canvasLocation" x="1049.2753623188407" y="795.53571428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="64" height="60"/>
+        <image name="circle.lefthalf.fill" catalog="system" width="64" height="60"/>
+        <image name="circle.righthalf.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
