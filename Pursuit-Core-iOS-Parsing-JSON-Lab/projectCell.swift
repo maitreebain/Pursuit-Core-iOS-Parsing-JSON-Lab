@@ -15,9 +15,8 @@ class projectCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
-    func configureCell(for weatherData: WeatherInfo, for weatherInfo: WeatherArrayData) {
+    func configureCell(for weatherData: WeatherInfo) {
         nameLabel.text = weatherData.name
-        mainLabel.text = weatherInfo.main
-        descriptionLabel.text = weatherInfo.description
+        mainLabel.text = weatherData.main["temp"]?.description
     }
 }
