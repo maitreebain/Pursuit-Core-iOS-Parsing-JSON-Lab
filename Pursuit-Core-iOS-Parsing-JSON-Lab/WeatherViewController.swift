@@ -31,6 +31,16 @@ class WeatherViewController: UIViewController {
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let weatherInfoVC = segue.destination as? WeatherInfoViewController,
+            let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("no segue found")
+        }
+        let weatherSelected = weather[indexPath.row]
+        
+        weatherInfoVC.weather = weatherSelected
+    }
+    
 
 }
 

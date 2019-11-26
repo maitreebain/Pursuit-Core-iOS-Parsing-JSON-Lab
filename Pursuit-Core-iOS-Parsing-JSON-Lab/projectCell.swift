@@ -12,7 +12,6 @@ class projectCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     
     
     func configureCell(for weatherData: WeatherInfo) {
