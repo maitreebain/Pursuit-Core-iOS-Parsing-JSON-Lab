@@ -31,6 +31,16 @@ class ColorViewController: UIViewController {
     func loadData() {
         color = ColorDataLoad.getColorInfo()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let colorDetailVC = segue.destination as? ColorDetailViewController,
+            let indexPath = colorTableView.indexPathForSelectedRow else {
+            fatalError("no segue found")
+        }
+        let colorSelected = color[indexPath.row]
+        
+        colorDetailVC.color = colorSelected
+    }
 }
 
 extension ColorViewController: UITableViewDataSource {

@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Color View Controller-->
+        <!--Colors-->
         <scene sceneID="S7y-SX-pbb">
             <objects>
                 <viewController id="xRp-6g-tMi" customClass="ColorViewController" customModule="Pursuit_Core_iOS_Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,6 +35,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BwP-cJ-r2p" kind="show" id="FTn-SW-gfm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -48,7 +51,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oAD-7j-gKf"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CIY-f9-eJU"/>
+                    <navigationItem key="navigationItem" title="Colors" id="CIY-f9-eJU"/>
                     <connections>
                         <outlet property="colorTableView" destination="4ep-Ty-ber" id="tnj-3c-NoN"/>
                     </connections>
@@ -56,6 +59,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teq-ak-Kgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="-554.46428571428567"/>
+        </scene>
+        <!--Color Detail View Controller-->
+        <scene sceneID="gb8-8j-rhb">
+            <objects>
+                <viewController id="BwP-cJ-r2p" customClass="ColorDetailViewController" customModule="Pursuit_Core_iOS_Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddY-f3-8Rz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hex Value: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-9T-HcI">
+                                <rect key="frame" x="20" y="228" width="374" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC5-31-JGa">
+                                <rect key="frame" x="181" y="435" width="52.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qXh-fc-LFS" firstAttribute="trailing" secondItem="yQ1-9T-HcI" secondAttribute="trailing" constant="20" id="83l-PT-i54"/>
+                            <constraint firstItem="yQ1-9T-HcI" firstAttribute="top" secondItem="qXh-fc-LFS" secondAttribute="top" constant="140" id="SNs-3g-edv"/>
+                            <constraint firstItem="yQ1-9T-HcI" firstAttribute="leading" secondItem="qXh-fc-LFS" secondAttribute="leading" constant="20" id="X5f-oj-wem"/>
+                            <constraint firstItem="JC5-31-JGa" firstAttribute="centerY" secondItem="ddY-f3-8Rz" secondAttribute="centerY" id="kuJ-l4-S5u"/>
+                            <constraint firstItem="JC5-31-JGa" firstAttribute="centerX" secondItem="ddY-f3-8Rz" secondAttribute="centerX" id="oHF-4e-3ov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXh-fc-LFS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zaN-gR-qel"/>
+                    <connections>
+                        <outlet property="hexLabel" destination="yQ1-9T-HcI" id="ttX-q6-sxF"/>
+                        <outlet property="rgbLabel" destination="JC5-31-JGa" id="eIS-lM-Q9c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QnC-Ua-RcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2805" y="-554"/>
         </scene>
         <!--Weather Info View Controller-->
         <scene sceneID="7HZ-q1-893">
