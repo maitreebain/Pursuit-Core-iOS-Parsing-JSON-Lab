@@ -24,6 +24,7 @@ class ColorViewController: UIViewController {
 
         colorTableView.dataSource = self
         loadData()
+        colorTableView.delegate = self
     }
 
 
@@ -41,8 +42,19 @@ extension ColorViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
         
         let colorPicked = color[indexPath.row]
-        cell.textLabel?.text = colorPicked.name
+        cell.textLabel?.text = colorPicked.name.value
+        cell.backgroundColor = UIColor(displayP3Red: CGFloat(colorPicked.rgb.r / 255), green: CGFloat(colorPicked.rgb.g / 255), blue: CGFloat(colorPicked.rgb.b / 255), alpha: 1)
+        
+        if colorPicked.name.value == "Cod Gray" {
+            cell.textLabel?.textColor = .white
+        }
         
         return cell
+    }
+}
+
+extension ColorViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }

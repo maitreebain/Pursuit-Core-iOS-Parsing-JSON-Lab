@@ -13,34 +13,27 @@ struct ColorDataLoad: Codable {
 }
 
 struct Colors: Codable {
-    let hex: [String: String]
-    let rgb: [String: String]
-    let name: [String: String]
+    let hex: HexValue
+    let rgb: RGBValue
+    let name: NameValue
 }
 
-extension Colors {
-    
-    static func getHex() -> [String:String] {
-        
-        var hexDictionary = [String:String]()
-        
-        guard let fileURL = Bundle.main.url(forResource: "ColorData", withExtension: "json") else {
-            fatalError("no color data file found")
-        }
-    
-        do {
-            let data = try Data.init(contentsOf: fileURL)
-            
-            let hexDict = try JSONDecoder().decode(ColorDataLoad.self, from: data)
-            hexDictionary = hexDict.colors
-        }
-        catch {
-            fatalError("error found: \(error)")
-        }
-    
-    
+struct HexValue: Codable {
+    let value: String
 }
+
+struct RGBValue: Codable {
+    let r: Double
+    let g: Double
+    let b: Double
+    let value: String
 }
+
+struct NameValue: Codable {
+    let value: String
+}
+
+
 extension ColorDataLoad {
     
     static func getColorInfo() -> [Colors] {
