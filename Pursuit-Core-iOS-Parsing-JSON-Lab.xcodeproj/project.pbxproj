@@ -15,6 +15,7 @@
 		804B5B96239610E100B032AD /* RandomUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B5B95239610E100B032AD /* RandomUserViewController.swift */; };
 		804B5B98239610F000B032AD /* RandomUserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 804B5B97239610F000B032AD /* RandomUserData.json */; };
 		804B5B9A2396118400B032AD /* RandomUserDataLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B5B992396118400B032AD /* RandomUserDataLoad.swift */; };
+		8090D7862396D8660029E202 /* RandomUserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8090D7852396D8660029E202 /* RandomUserDetailController.swift */; };
 		80A2A52B238C84F7007F82E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2A52A238C84F7007F82E3 /* AppDelegate.swift */; };
 		80A2A52D238C84F7007F82E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2A52C238C84F7007F82E3 /* SceneDelegate.swift */; };
 		80A2A52F238C84F7007F82E3 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A2A52E238C84F7007F82E3 /* WeatherViewController.swift */; };
@@ -35,6 +36,7 @@
 		804B5B95239610E100B032AD /* RandomUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewController.swift; sourceTree = "<group>"; };
 		804B5B97239610F000B032AD /* RandomUserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RandomUserData.json; sourceTree = "<group>"; };
 		804B5B992396118400B032AD /* RandomUserDataLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDataLoad.swift; sourceTree = "<group>"; };
+		8090D7852396D8660029E202 /* RandomUserDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailController.swift; sourceTree = "<group>"; };
 		80A2A527238C84F7007F82E3 /* Pursuit-Core-iOS-Parsing-JSON-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Parsing-JSON-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A2A52A238C84F7007F82E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A2A52C238C84F7007F82E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				804B5B97239610F000B032AD /* RandomUserData.json */,
 				804B5B992396118400B032AD /* RandomUserDataLoad.swift */,
 				804B5B95239610E100B032AD /* RandomUserViewController.swift */,
+				8090D7852396D8660029E202 /* RandomUserDetailController.swift */,
 				80A2A533238C84F8007F82E3 /* Assets.xcassets */,
 				80A2A535238C84F8007F82E3 /* LaunchScreen.storyboard */,
 				80A2A538238C84F9007F82E3 /* Info.plist */,
@@ -179,6 +182,7 @@
 				80A2A52B238C84F7007F82E3 /* AppDelegate.swift in Sources */,
 				80A2A541238C86DE007F82E3 /* WeatherDataLoad.swift in Sources */,
 				80A2A543238C92A3007F82E3 /* projectCell.swift in Sources */,
+				8090D7862396D8660029E202 /* RandomUserDetailController.swift in Sources */,
 				8040A45A238DEE50002637E9 /* ColorViewController.swift in Sources */,
 				804B5B96239610E100B032AD /* RandomUserViewController.swift in Sources */,
 				80A2A52D238C84F7007F82E3 /* SceneDelegate.swift in Sources */,

@@ -17,6 +17,7 @@ struct UserInfo: Codable {
     let location: UserLocation
     let email: String
     let phone: String
+    let dob: DateOfBirth
 }
 
 struct UserName: Codable {
@@ -29,8 +30,12 @@ struct UserLocation: Codable {
 }
 
 struct UserStreetInfo: Codable {
-    let number: Double
+    let number: Int
     let name: String
+}
+
+struct DateOfBirth: Codable {
+    let date: String
 }
 
 extension RandomUserDataLoad {
